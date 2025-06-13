@@ -324,4 +324,22 @@ exports.deleteBooking = async (req, res) => {
         console.error('Error deleting booking:', error);
         res.status(500).json({ error: 'Error deleting booking' });
     }
+};
+
+// Optional: Add middleware to protect image access
+exports.protectUploads = (req, res, next) => {
+    // Example: Only allow authenticated users to see images
+    // You can customize this based on your needs
+    
+    // For now, allow all access (your current behavior)
+    next();
+    
+    /* 
+    // Uncomment this if you want to restrict image access:
+    if (req.session && req.session.userId) {
+        next(); // User is logged in, allow access
+    } else {
+        res.status(403).send('Access denied');
+    }
+    */
 }; 
