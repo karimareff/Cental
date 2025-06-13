@@ -4,6 +4,7 @@ const Booking = require('../models/Booking');
 // Display homepage with cars
 exports.getHomepage = async (req, res) => {
   try {
+<<<<<<< HEAD
     const page = parseInt(req.query.page) || 1;
     const limit = 6; // Show 6 cars per page
     const skip = (page - 1) * limit;
@@ -28,6 +29,13 @@ exports.getHomepage = async (req, res) => {
         hasNextPage: page < totalPages,
         hasPrevPage: page > 1
       }
+=======
+    const cars = await Car.find();
+    res.render('homepage', {
+      title: 'Cental - Your Journey Starts Here',
+      currentPage: 'home',
+      cars: cars
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
     });
   } catch (err) {
     console.error("Error fetching cars:", err);

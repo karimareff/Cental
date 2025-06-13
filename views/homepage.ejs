@@ -119,6 +119,7 @@
                     </div>
                 <% }); %>
                 </div>
+<<<<<<< HEAD
 
                 <!-- Pagination Controls -->
                 <% if (pagination && (pagination.hasPrevPage || pagination.hasNextPage)) { %>
@@ -140,6 +141,53 @@
                         <% } %>
                     </div>
                 <% } %>
+=======
+            </div>
+        </section>
+
+        <!-- Currency Converter Section -->
+        <section class="currency-converter">
+            <div class="container">
+                <h2>💱 Currency Converter</h2>
+                <p>Convert USD to Egyptian Pounds (EGP)</p>
+                
+                <div class="converter-box">
+                    <div class="input-group">
+                        <label for="usd-amount">Amount in USD:</label>
+                        <div class="input-wrapper">
+                            <span class="currency-symbol">$</span>
+                            <input type="number" id="usd-amount" placeholder="Enter amount" min="0" step="0.01">
+                        </div>
+                    </div>
+                    
+                    <div class="convert-button-wrapper">
+                        <button id="convert-btn" class="btn btn-primary">
+                            <i class="fas fa-exchange-alt"></i> Convert
+                        </button>
+                    </div>
+                    
+                    <div id="conversion-result" class="result-box" style="display: none;">
+                        <div class="result-content">
+                            <div class="result-amount">
+                                <span id="egp-amount">0.00</span> EGP
+                            </div>
+                            <div class="result-details">
+                                <small>Exchange Rate: 1 USD = <span id="exchange-rate">0.00</span> EGP</small>
+                                <br>
+                                <small>Last Updated: <span id="last-updated">-</span></small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="conversion-error" class="error-box" style="display: none;">
+                        <p id="error-message">Error occurred while converting currency</p>
+                    </div>
+                    
+                    <div id="conversion-loading" class="loading-box" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i> Converting...
+                    </div>
+                </div>
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
             </div>
         </section>
     </main>
@@ -148,6 +196,12 @@
 
     <!-- Include the AJAX features -->
     <script src="/js/ajax-features.js"></script>
+<<<<<<< HEAD
+=======
+    
+    <!-- Include Currency Converter -->
+    <script src="/js/currency-converter.js"></script>
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
 
     <script>
         function viewCarDetails(carId) {

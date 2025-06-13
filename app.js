@@ -14,7 +14,11 @@ const bookingRoutes = require('./routes/bookingRoutes');
 const contactRoutes = require('./routes/contactRoutes');
 const cartRoutes = require('./routes/cartRoutes');
 const paymentRoutes = require('./routes/paymentRoutes');
+<<<<<<< HEAD
 const carsRouter = require('./routes/cars');
+=======
+const currencyRoutes = require('./routes/currencyRoutes');
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
 
 // Import middleware
 const { sessionToLocals } = require('./middleware/auth');
@@ -91,7 +95,13 @@ app.use('/', bookingRoutes);
 app.use('/', contactRoutes);
 app.use('/cart', cartRoutes);
 app.use('/payment', paymentRoutes);
+<<<<<<< HEAD
 app.use('/api/cars', carsRouter);
+=======
+app.use('/', currencyRoutes);
+
+console.log('✅ Currency routes loaded successfully!');
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
 
 // 404 handler
 app.use((req, res) => {
