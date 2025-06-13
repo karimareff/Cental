@@ -7,6 +7,8 @@ router.get('/', carController.getHomepage);
 router.get('/car/:id', carController.getCarDetails);
 router.get('/cars', carController.getAllCars);
 
+<<<<<<< HEAD
+=======
 // About Us page
 router.get('/about', (req, res) => {
     res.render('about', { 
@@ -23,6 +25,7 @@ router.get('/contact', (req, res) => {
     });
 });
 
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
 // API routes
 router.get('/api/cars/search', carController.searchCars);
 router.get('/api/cars/filter', carController.filterCars);

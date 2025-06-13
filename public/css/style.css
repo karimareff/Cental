@@ -523,6 +523,10 @@ img {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: var(--spacing-2xl);
     margin-top: var(--spacing-xl);
+<<<<<<< HEAD
+    margin-bottom: 2rem;
+=======
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
 }
 
 .car-card {
@@ -1026,6 +1030,30 @@ img {
     }
 }
 
+<<<<<<< HEAD
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.pagination .btn {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pagination-info {
+    font-size: 1rem;
+    color: #666;
+    padding: 0.5rem 1rem;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+=======
 /* ========================================
    ENHANCED ANIMATIONS
    ======================================== */
@@ -1889,4 +1917,5 @@ img {
     .result-amount {
         font-size: 1.3rem;
     }
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
 }

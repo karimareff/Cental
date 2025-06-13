@@ -119,6 +119,29 @@
                     </div>
                 <% }); %>
                 </div>
+<<<<<<< HEAD
+
+                <!-- Pagination Controls -->
+                <% if (pagination && (pagination.hasPrevPage || pagination.hasNextPage)) { %>
+                    <div class="pagination">
+                        <% if (pagination.hasPrevPage) { %>
+                            <a href="/?page=<%= pagination.currentPage - 1 %>" class="btn btn-secondary">
+                                <i class="fas fa-chevron-left"></i> Previous
+                            </a>
+                        <% } %>
+                        
+                        <span class="pagination-info">
+                            Page <%= pagination.currentPage %> of <%= pagination.totalPages %>
+                        </span>
+                        
+                        <% if (pagination.hasNextPage) { %>
+                            <a href="/?page=<%= pagination.currentPage + 1 %>" class="btn btn-secondary">
+                                Next <i class="fas fa-chevron-right"></i>
+                            </a>
+                        <% } %>
+                    </div>
+                <% } %>
+=======
             </div>
         </section>
 
@@ -164,6 +187,7 @@
                         <i class="fas fa-spinner fa-spin"></i> Converting...
                     </div>
                 </div>
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
             </div>
         </section>
     </main>
@@ -172,9 +196,12 @@
 
     <!-- Include the AJAX features -->
     <script src="/js/ajax-features.js"></script>
+<<<<<<< HEAD
+=======
     
     <!-- Include Currency Converter -->
     <script src="/js/currency-converter.js"></script>
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
 
     <script>
         function viewCarDetails(carId) {

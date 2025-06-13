@@ -1,5 +1,7 @@
 // AJAX/Fetch Features for Car Rental Website
 
+<<<<<<< HEAD
+=======
 // Enhanced Animation Controller
 class AnimationController {
     constructor() {
@@ -160,6 +162,7 @@ class AnimationController {
     }
 }
 
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
 // 1. Real-time Car Search and Filtering
 class CarSearch {
     constructor() {
@@ -719,11 +722,14 @@ async function loadCarData(carId) {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('AJAX features initializing...');
     
+<<<<<<< HEAD
+=======
     // Initialize animation controller for all pages
     const animationController = new AnimationController();
     animationController.initSmoothScrolling();
     animationController.initParallaxEffects();
     
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
     // Initialize based on current page
     const currentPage = document.body.dataset.page;
     
@@ -743,6 +749,8 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('AJAX features initialized');
 });
 
+<<<<<<< HEAD
+=======
 // Enhanced Navigation Functions
 function toggleUserMenu() {
     const dropdown = document.getElementById('userDropdown');
@@ -803,4 +811,5 @@ document.addEventListener('click', (e) => {
     }
 });
 
+>>>>>>> 8b0ace7af264ad2d093e986c2e82964fb92460aa
 console.log('AJAX features script loaded'); 
